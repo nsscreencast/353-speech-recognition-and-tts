@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LanguagePractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saX-d3-wCq">
+                                <rect key="frame" x="42.5" y="276" width="290" height="135"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-pK-AsE" customClass="PlayButton" customModule="LanguagePractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                        <connections>
+                                            <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9y-IE-5gH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2I-ng-rGT" customClass="RecordButton" customModule="LanguagePractice" customModuleProvider="target">
+                                        <rect key="frame" x="155" y="0.0" width="135" height="135"/>
+                                        <connections>
+                                            <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDI-z1-6h5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="DYr-kB-AoZ"/>
+                                    <constraint firstItem="B1e-pK-AsE" firstAttribute="centerY" secondItem="saX-d3-wCq" secondAttribute="centerY" id="KqY-L2-iZx"/>
+                                    <constraint firstAttribute="height" constant="135" id="NR2-EM-nOY"/>
+                                    <constraint firstItem="B1e-pK-AsE" firstAttribute="width" secondItem="saX-d3-wCq" secondAttribute="height" multiplier="1:1" id="Sab-Kz-kbS"/>
+                                    <constraint firstItem="d2I-ng-rGT" firstAttribute="centerY" secondItem="saX-d3-wCq" secondAttribute="centerY" id="Uf7-BP-iXa"/>
+                                    <constraint firstItem="d2I-ng-rGT" firstAttribute="width" secondItem="saX-d3-wCq" secondAttribute="height" multiplier="1:1" id="ZgH-lQ-JnC"/>
+                                    <constraint firstItem="B1e-pK-AsE" firstAttribute="leading" secondItem="saX-d3-wCq" secondAttribute="leading" id="odW-Dz-0mM"/>
+                                    <constraint firstItem="d2I-ng-rGT" firstAttribute="height" secondItem="saX-d3-wCq" secondAttribute="height" id="tJp-K4-BVo"/>
+                                    <constraint firstItem="B1e-pK-AsE" firstAttribute="height" secondItem="saX-d3-wCq" secondAttribute="height" id="y52-ry-g8l"/>
+                                    <constraint firstAttribute="trailing" secondItem="d2I-ng-rGT" secondAttribute="trailing" id="zIE-wc-2lj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-As-cKJ">
+                                <rect key="frame" x="284" y="617" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.2627450980392157" green="0.46666666666666667" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="61f-mr-uCD"/>
+                                    <constraint firstAttribute="height" constant="30" id="J63-Fo-b8B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&gt;&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dh9-kA-8kr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-7s-OFk">
+                                <rect key="frame" x="16" y="617" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.46666666670000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="eCr-88-KJg"/>
+                                    <constraint firstAttribute="height" constant="30" id="xLL-Yc-2nv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="prevTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sK5-8b-GYg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIN-U0-egx">
+                                <rect key="frame" x="42.5" y="120" width="290" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="FBY-PH-JkX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gZp-As-cKJ" secondAttribute="trailing" constant="16" id="2LU-PE-hZH"/>
+                            <constraint firstItem="kIN-U0-egx" firstAttribute="centerX" secondItem="saX-d3-wCq" secondAttribute="centerX" id="B9s-B8-EEI"/>
+                            <constraint firstItem="kIN-U0-egx" firstAttribute="width" secondItem="saX-d3-wCq" secondAttribute="width" id="DZ9-8L-YwK"/>
+                            <constraint firstItem="b2T-7s-OFk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GgC-d7-swe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZp-As-cKJ" secondAttribute="bottom" constant="20" id="JMc-JF-IKs"/>
+                            <constraint firstItem="saX-d3-wCq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="LKf-UJ-DAC"/>
+                            <constraint firstItem="kIN-U0-egx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="VvE-IK-cZP"/>
+                            <constraint firstItem="saX-d3-wCq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dPw-48-9CI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b2T-7s-OFk" secondAttribute="bottom" constant="20" id="eXJ-kK-ohw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="phraseLabel" destination="kIN-U0-egx" id="xbL-rf-b9g"/>
+                        <outlet property="recordButton" destination="d2I-ng-rGT" id="YCF-m1-dpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
